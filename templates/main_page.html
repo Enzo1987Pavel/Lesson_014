@@ -7,41 +7,43 @@
 
 <style>
     H1 {
-      text-align: center;
-      color: #BCB500;
-      font-family: Segoe UI Black, monospace;
-    }
-
-    a.buttons {
-        display: inline-block;
-        padding: 15px 25px;
-        font-size: 24px;
-        cursor: pointer;
         text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: #fff;
-        background-color: #4CAF50;
-        border: none;
-        border-radius: 15px;
-  }
-
-    a.buttons:hover {
-        background: #008100;
-        background: linear-gradient(0deg, rgba(0,161,15,1) 0%, rgba(0, 154, 61, 0.84) 33%, rgb(0, 103, 32) 67%, rgb(0, 79, 21) 100%);
-  }
-
-    a.buttons:active {
-        color: #000000FF;
-        background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0));
-        box-shadow: inset 0 0 2px rgba(0,0,0,.2), inset 0 2px 5px rgba(0,0,0,.2), 0 1px rgba(255,255,255,.2);
-  }
-
+        color: #BCB500;
+        font-family: Segoe UI Black, monospace;
+    }
+    ul {
+        font-family: Segoe UI Black, monospace;
+        font-size:22px;
+    }
+    p {
+        font-size:18px;
+        text-align:center;
+        font-family: Times New Roman, serif;
+    }
 </style>
 
-<body>
-
 <h1>Главная станица<br/>домашней работы № 14 &laquo;Знакомство с SQL&raquo;</h1>
+
+<ul type="square">
+    <b><li>Шаг 1</li></b>
+    <p>Для поиска по названию фильма, добавьте в адресную строку <code>/movie/<b>title</b>/</code>, где <u>title</u> - искомое значение для названия фильма</p><br/>
+
+    <b><li>Шаг 2</li></b>
+    <p>Для поиска фильма по диапазону лет выпуска, добавьте в адресную строку <code>/movie/<b>min_year</b>/to/<b>min_year</b>/</code>, где <b>min_year</b> - начальное значение искомого года, <b>max_year</b> - конечное значение искомого года</p><br/>
+
+    <b><li>Шаг 3</li></b>
+    <p>Для поиска типа картины по рейтингу, добавьте в адресную строку <code>/rating/<b>children</b>/</code>, где <u>children</u> - фильтр типов картин по жанру для детей,
+    <u>family</u> - фильтр типов картин по жанру для семейного просмотра, <u>adult</u> - фильтр типов картин по жанру для взрослых</p><br/>
+
+    <b><li>Шаг 4</li></b>
+    <p>Для поиска 10 самых свежих фильмов по жанру, добавьте в адресную строку <code>/genre/<b>genre</b>/</code>, где <u>genre</u> - интересующий жанр фильма</p><br/>
+
+    <b><li>Шаг 5</li></b>
+    <p>Проверяет имена двух актеров, которые сыграли вместе более двух раз и выводит в консоль. Данные для проверки подготовлены в файле <b>main.py</b></p><br/>
+
+    <b><li>Шаг 6</li></b>
+    <p>Проверяет тип картины, ее год выпуска и жанр и выводит все в формате JSON-файла в консоль. Данные для проверки подготовлены в файле <b>main.py</b></p><br/>
+</ul>
 
 </body>
 </html>
